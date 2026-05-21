@@ -1,0 +1,38 @@
+# macOS files
+.DS_Store
+
+# Editor temporary files
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.iml
+
+# Python cache (if you use Python tools)
+__pycache__/
+*.py[cod]
+
+# Logs and environment files
+*.log
+*.env
+.env.local
+
+# Dependency directories
+node_modules/
+
+# Backup and package files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# System files
+Thumbs.db
+
+# Bash history
+.history
