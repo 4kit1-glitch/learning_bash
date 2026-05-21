@@ -19,6 +19,20 @@ You will see the project evolve through experimentation, practice scripts, and i
 
 This repository is a living learning journal. As you work through new ideas and challenges, continue refining the scripts and adding notes.
 
+### Running scripts
+
+Before running a Bash script, make it executable if it is not already:
+
+```bash
+chmod +x script.sh
+```
+
+Then run the script with:
+
+```bash
+./script.sh
+```
+
 ### Recommended workflow
 
 1. Work in a terminal and keep commits small.
