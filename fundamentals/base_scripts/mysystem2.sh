@@ -2,6 +2,8 @@
 # progam uses date, w , uname, uptime
 # THIS PROGRAM IS A COPY OF mysystem.sh but using the "printf command to print not echo"
 
+## this script is quite outdated let me modify it in mysystem3.sh
+
 clear 
 
 printf "This program displays some info about $USER's system \n"
