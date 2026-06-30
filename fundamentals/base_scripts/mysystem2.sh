@@ -22,3 +22,4 @@ printf "processor type = `uname -m`\n"
 
 printf "uptime info \n"
 uptime
+
