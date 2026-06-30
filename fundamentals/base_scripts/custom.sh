@@ -18,5 +18,8 @@ COLOR="yellow"
 USERNAME="harry"
 
 # printing the variable
-printf "%s\n%s\n" $COLOR $USERNAME
+echo $COLOR 
+echo $USERNAME
+
+echo "Giving back your prompt back"
 
