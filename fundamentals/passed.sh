@@ -21,7 +21,6 @@ full_name=$*    # this makes a string of all parameters passed (more like option
 echo "your full name is: $full_name"
 
 
-# the value of the IFS VARIABLE CAN AFFECT THE 
 
 
 
