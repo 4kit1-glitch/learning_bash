@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # program demonstrates use of some reserved values expecially IFS 
-# IFS -- INTERNAML FIELD SEPARATOR
+# IFS -- INTERNAl FIELD SEPARATOR
 
 clear
 
@@ -14,4 +14,6 @@ echo $words #This prints the whole string
 for word in $words; do
     echo "fruit: $word"
 done
+
+
 
