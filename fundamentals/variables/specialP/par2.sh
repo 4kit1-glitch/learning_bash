@@ -12,4 +12,4 @@ for var in "$@"; do
     echo "var= $var"
 done
 
-echo "There are $# parameters passed"
+echo "There are $# parameters passed"       # the "$#" special parameter expands to the number of parameters passed
