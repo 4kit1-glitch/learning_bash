@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# program displays ome info
 clear                               # clear screen
 
 echo "Program shows home directory, cuurent terminal and some processes running at level 3 of system"
@@ -13,4 +14,4 @@ echo "Current Terminal = $TERM"     # print current terminal
 
 # see processes 
 echo "Processes"
-ls /etc/rc3.d/S
+### ls /etc/rc*.d/S* ## this command wont work because my sytems runs systemd not runlevels
