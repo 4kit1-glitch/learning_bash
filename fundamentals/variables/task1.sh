@@ -9,4 +9,13 @@ DEFAULT_CITY="CAMPTON" #a string variable the above was an interger variable
 ## creating local variables inside functions
 my_func() {
     local name="harry" 
+    # prints the name
+    echo $name
+    printf "$name\n" 
 }
+
+#calling my_func
+my_func
+
+echo printing max tries
+echo $MAX_TRIES
