@@ -5,7 +5,7 @@ clear
 
 echo "parameters inputed using $ *"
 
-for par in "$*"; do
+for par in "$*"; do  # just avoid this 
     echo "para = $par"
 done
 
@@ -19,3 +19,5 @@ done
 
 ## the real test lies when the parameters are a string and an and individual
 ## example test with "kengah Ireneaus" and Tambang to see difference
+
+echo "number of parameters passed = $#"
