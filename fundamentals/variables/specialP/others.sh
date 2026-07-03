@@ -9,6 +9,11 @@ echo " this is the current script: $0"      # the $0 parameter expands to the na
 ## if you run with relative path it will give relative path
 ## if you just give the script name it will give just the script name - it shows hot you ran the script
 
+
+
+
+
 echo $_  ### this shows the last parameter of the previous command ran or previous script run 
          ### it isn't used in actual scripts mostly in interactive mode 
          ### it gets reset every time a new command is ran 
+
