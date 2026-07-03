@@ -3,7 +3,7 @@
 # this script tries to demnstrtate the difference between $* $@
 clear
 
-echo "parameters inputed using $ *"
+echo "parameters inputed using \$*"
 
 for par in "$*"; do  # just avoid this 
     echo "para = $par"
