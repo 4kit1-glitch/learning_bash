@@ -10,7 +10,7 @@ for par in "$*"; do  # just avoid this
 done
 
 
-echo "parameters using $ @"
+echo "parameters using \$@"
 
 for par in "$@"; do
     echo "para = $par"
