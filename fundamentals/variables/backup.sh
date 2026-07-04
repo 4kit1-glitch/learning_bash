@@ -11,4 +11,11 @@ DIR=$1
 
 echo "$(basename $0) <$DIR>"
 
-ls -la $DIR > list.txt
+ls -la $DIR > store.txt 2> err_store.txt
+
+cat store.txt
+
+echo errors
+cat err_store.txt
+
+
