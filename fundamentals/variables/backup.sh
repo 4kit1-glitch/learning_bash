@@ -19,8 +19,9 @@ echo errors
 
 ## add date to error output
 date >> err_store.txt &
-
+wait
 cat err_store.txt
+
 
 
 
