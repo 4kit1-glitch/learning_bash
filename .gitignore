@@ -13,7 +13,7 @@
 .idea/
 *.iml
 
-# Python cache (if you use Python tools)
+# Python cache (for Python tools)
 __pycache__/
 *.py[cod]
 
