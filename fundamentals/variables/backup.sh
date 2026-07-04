@@ -16,6 +16,12 @@ ls -la $DIR > store.txt 2> err_store.txt
 cat store.txt
 
 echo errors
+
+## add date to error output
+date >> err_store.txt &
+
 cat err_store.txt
+
+
 
 
