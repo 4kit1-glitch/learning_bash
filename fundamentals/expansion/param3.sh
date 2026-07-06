@@ -35,4 +35,7 @@ clear
 ### lowercasing and uppercasing everything
 var4="heLLo"
 
-echo $var4
+echo "same - $var4"
+
+echo "upper case - ${var4^^}"
+echo "lower-case- ${var4,,}"
