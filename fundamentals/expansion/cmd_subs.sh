@@ -6,7 +6,7 @@ set -euo pipefail # this tag combination
 clear
 ## exawcmple
 files="$(cd ~/Videos && ls *.mp4)"
-all_file=$(find ~/Videos -type f -name "*.mp4")
+all_file=$(find ~/Videos -maxdepth 1 -type f -name "*.mp4")
 
 echo -e "$files\n"
 echo $all_file
