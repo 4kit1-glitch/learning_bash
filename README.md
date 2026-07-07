@@ -1,48 +1,46 @@
 # Learning Bash
 
-This repository documents a personal journey toward mastering Bash scripting.
+This repository is a structured learning workspace for practicing Bash scripting in a clean and professional way.
 
-## Project Purpose
+## Repository Structure
 
-The aim of this repo is not to hold a final product, but to track progress over time as Bash skills improve.
+- scripts/01-basics: introductory shell scripts and basic automation examples
+- scripts/02-variables: variables, parameter expansion, quoting, and special parameters
+- scripts/03-expansion: arithmetic expansion, command substitution, brace expansion, and related concepts
+- scripts/04-comments: commented examples and shell notes for learning purposes
+- scripts/05-exercises: hands-on exercises and practice scripts
+- resources: supporting files such as notes and reference materials
 
-You will see the project evolve through experimentation, practice scripts, and incremental improvements that reflect real learning.
+## How to Use This Repository
 
-## Learning Focus
-
-- Building confidence with shell syntax and command usage
-- Exploring variables, conditionals, loops, and functions
-- Practicing safe script execution and debugging
-- Developing useful automation with Bash
-
-## Usage
-
-This repository is a living learning journal. As you work through new ideas and challenges, continue refining the scripts and adding notes.
-
-### Running scripts
-
-Before running a Bash script, make it executable if it is not already:
+1. Open a topic folder that matches the concept you want to practice.
+2. Review the script names and choose one that fits your current topic.
+3. Make the script executable if needed:
 
 ```bash
 chmod +x script.sh
 ```
 
-Then run the script with:
+4. Run it with:
 
 ```bash
 ./script.sh
 ```
 
-### Recommended workflow
+## Learning Goals
 
-1. Work in a terminal and keep commits small.
-2. Experiment with one concept at a time.
-3. Document what you learned and what changed.
+- Build confidence with Bash syntax
+- Practice variables, expansions, and comments
+- Learn script structure through small examples
+- Improve problem-solving through exercises
 
-## Growth Mindset
+## Recommended Workflow
 
-This project is intentionally open-ended. Expect frequent updates, new examples, and progressive complexity as Bash becomes more familiar.
+- Keep each script focused on one concept
+- Write small, readable examples
+- Test scripts often and adjust as you learn
+- Add notes when a pattern becomes important
 
-## License
+## Notes
 
-This repository is for personal learning and practice. Use it to guide your own Bash journey.
+This project is intended for personal learning and continuous improvement. The structure is designed to make progress easier to follow over time.
