@@ -19,8 +19,9 @@ grep -E '^-' rm.txt
 
 grep -E '\.$' rm.txt  # the use of the escape char is used to make the special symbols literal
 
-# find all lines that are not empty
-grep -E '.' rm.txt
+# count all lines that are empty
+grep -E -nv '.' rm.txt
+grep -E -nv '^$' rm.txt
 
 
 
