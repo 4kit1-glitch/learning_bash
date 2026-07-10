@@ -31,6 +31,16 @@ grep -Ew 'failed' rm.txt # strips where the failed stands alone as a full word
 # matching with case insensitive
 grep -Ei "error" rm.txt 
 
+# matching words 
+
+# matching start of words
+# \<
+
+# match all lines that have the word You as start of a word
+grep -Ei '\<You' rm.txt
+
+
+
 
 
 
