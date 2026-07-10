@@ -21,7 +21,9 @@ grep -E '\.$' rm.txt  # the use of the escape char is used to make the special s
 
 # count all lines that are empty
 grep -E -nv '.' rm.txt
-grep -E -nv '^$' rm.txt
+grep -E -n '^$' rm.txt
+
+grep -Ev '^#|^$' rm.txt # strip comments and blank lines
 
 
 
