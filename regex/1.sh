@@ -26,7 +26,10 @@ grep -E -n '^$' rm.txt  # faster lines where the start and end touch
 grep -Ev '^#|^$' rm.txt # strip comments and blank lines
 
 #matching whole words use -w 
-grep -Ew 'failed'
+grep -Ew 'failed' rm.txt # strips where the failed stands alone as a full word
+
+# matching with case insensitive
+grep -Ei "error" rm.txt 
 
 
 
