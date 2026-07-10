@@ -4,4 +4,8 @@
 set -euo pipefail
 
 
-#character classes
+#character classes -- match a set of characters -- matches only single chars
+# []
+
+# 1. [abc] - matches  a, b or c 
+# 2. [^abc] - dont match any line with a,b,c
