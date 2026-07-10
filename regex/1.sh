@@ -34,13 +34,17 @@ grep -Ei "error" rm.txt
 # matching words 
 
 # matching start of words
-# \<
+# \< at the start
 
 # match all lines that have the word You as start of a word
 grep -Ei '\<You' rm.txt
 
 
+# matching end of words 
+# \> at the end
 
+# match all lines that have tube as the end of the word 
+grep -Ei 'tube\>'
 
 
 
