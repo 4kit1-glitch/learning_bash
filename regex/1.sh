@@ -20,10 +20,14 @@ grep -E '^-' rm.txt
 grep -E '\.$' rm.txt  # the use of the escape char is used to make the special symbols literal
 
 # count all lines that are empty
-grep -E -nv '.' rm.txt
-grep -E -n '^$' rm.txt
+grep -E -nv '.' rm.txt  ## DONT USE SLOW AND CONFUSING checks every sing line for a single char then reverses the rslt
+grep -E -n '^$' rm.txt  # faster lines where the start and end touch
 
 grep -Ev '^#|^$' rm.txt # strip comments and blank lines
+
+#matching whole words use -w 
+grep -Ew 'failed'
+
 
 
 
