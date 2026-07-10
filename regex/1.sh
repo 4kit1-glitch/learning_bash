@@ -12,11 +12,17 @@ set -euo pipefail
 cd regex    # making sure am in my folder
 
 # find the lines that start with -
-grep -E "^-" rm.txt
+grep -E '^-' rm.txt
 
 
-# finding all words that end in .
-grep -E 
+# find the lines that end in .
+
+grep -E '\.$' rm.txt  # the use of the escape char is used to make the special symbols literal
+
+# find all lines that are not empty
+grep -E '.' rm.txt
+
+
 
 
 
