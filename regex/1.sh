@@ -47,6 +47,18 @@ grep -Ei '\<You' rm.txt
 grep -Ei 'tube\>'
 
 
+#### demostrating | syntax in regex
+
+# used to link two patterns
+# it is low priority
+# matches left then right in like an or statement
+
+# match warnings and errors in the file
+grep -Ei 'error|bug' rm.txt
+
+# the ? command does some thing like if the char before before is present or absent
+grep -Ei 'colou?r' rm.txt
+ 
 
 
 
