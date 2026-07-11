@@ -1,6 +1,7 @@
 #!/bin/env bash
 
 # script demonstrates the use of regex using grep 
+# DINT RUN THIS SCCRIPT
 set -euo pipefail
 
 
@@ -11,5 +12,12 @@ set -euo pipefail
 # 2. [^abc] - dont match any line with a,b,c
 
 grep -E '[abc]' /etc/shared/dict
-grep -E '[^abc] /etc/shared/dict
+grep -E '[^abc]' /etc/shared/dict
 
+grep -E [0-9] ## matches all single digits 
+grep -E [0123456789] ## same as the above 
+
+grep [a-z] # ;aowecase letters
+
+## 
+grep -E [A-Za-z]    # match any letter 
