@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 # script demonstrates the use of regex using grep 
-# DINT RUN THIS SCCRIPT
+# DONT RUN THIS SCCRIPT
 set -euo pipefail
 
 
