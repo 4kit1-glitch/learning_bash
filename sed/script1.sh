@@ -7,3 +7,4 @@ set -euo pipefail
 cd ~+/sed   # move to directory of file
 cat -n config.txt # see full file numbered
 
+
