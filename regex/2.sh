@@ -21,3 +21,12 @@ grep [a-z] # ;aowecase letters
 
 ## 
 grep -E [A-Za-z]    # match any letter 
+
+## folowing postix standards we have
+
+grep '[[:digit:]]' rm.txt   # matches all digits in the current local -- more portable
+
+grep '[[:space:]]' matches wihitespaces and empty lines
+
+grep [[:alpha:]]    # matches all single letters equiv to char set of current local
+
