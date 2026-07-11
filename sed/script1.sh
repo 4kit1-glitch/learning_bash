@@ -30,6 +30,7 @@ clear
 sed -n '/^this.*errors$/p' config.txt
 
 # line that contains any digit
+sed -n ''
 
 
 
