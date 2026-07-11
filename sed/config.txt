@@ -1,0 +1,7 @@
+this is the first line of an example text.
+it is a text with errors 
+lots of errors.
+so much errors, all this errors make me sick. 
+This line has no errors
+this line has warnings but no errors
+this is the last line.
