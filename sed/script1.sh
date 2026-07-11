@@ -18,6 +18,18 @@ clear
 # to ensure on ly the pattern we want matches we use the 
 sed -n  '/erors/p' config.txt
 
+clear
+# deleting lines of input
+sed '/errors/d' config.txt   # this only edits the output without modifying the original file
+
+clear
+
+# showing use of regex in this file 
+
+# list all lines that start with this and end with errors
+sed -n '/^this.*errors$/p' config.txt
+
+# line that contains any digit
 
 
 
