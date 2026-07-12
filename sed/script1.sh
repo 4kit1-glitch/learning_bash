@@ -52,7 +52,17 @@ clear
 # sed -i '/[[:digit:]]/d' config.txt   #all lines with numbers deleted
 clear
 
+## delete from 2 to end  using the $ -- end place holder
+sed '2,$d' config.txt ## prints just the first line
+clear
+
+## print from start to 4  
+sed -n '1,4p' config.txt
+clear
 
 
+### ranging with patterns 
 
-
+# print the from line with a it is to line so much
+sed -n '/it is/, /so much/p' config.txt
+clear
