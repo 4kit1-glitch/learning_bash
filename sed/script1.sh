@@ -62,6 +62,10 @@ clear
 
 
 ### ranging with patterns 
+## it's format is quite simple, that is it's format is 
+## sed -<tag> '/pattern1/,/pattern2/<option>'
+
+
 
 # print the from line with a it is to line so much
 sed -n '/it is/, /so much/p' config.txt

@@ -15,4 +15,5 @@ clear
 sed 's/erors/errors/' config.txt 
 
 # the above command makes it such that sed checks only the first occurence
-# but if we are to make it such that 
+# but if we are to make it such that it should replace each occurence use the /g char at the end of thr epattern
+
