@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 # script demonstrates interactive editing in sed
-# to run remove the clear statements one by one 
+# to run script remove the clear statements one by one 
 set -euo pipefail
 
 # printing lines containing a file patterns
@@ -41,7 +41,12 @@ clear
 
 clear
 
-# rpint the first two lines 
-sed -n '1,2p' config.txt
+# print the first two lines 
+sed -n '1,2p' config.txt # this prints the first two lines of the file
+
+clear
+sed -n '1,2p; 4,5p' config.txt # this prints the first two lines and lines 4 and 5 of the file
+
+## actually modifying file 
 
 
