@@ -17,3 +17,13 @@ sed 's/erors/errors/' config.txt
 # the above command makes it such that sed checks only the first occurence
 # but if we are to make it such that it should replace each occurence use the /g char at the end of thr epattern
 
+clear
+sed 's/erors/errors/g' config.txt | sed 's/ar/are/g' config.txt # multiple finding and replacing with pipes
+
+clear
+
+# ok lets say we wanna insert a char at the start of each line 
+sed 's/^/# /' config.txt
+
+# use . for any char , * for all , $ for end 
+clear 
