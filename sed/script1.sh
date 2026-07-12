@@ -47,6 +47,12 @@ sed -n '1,2p' config.txt # this prints the first two lines of the file
 clear
 sed -n '1,2p; 4,5p' config.txt # this prints the first two lines and lines 4 and 5 of the file
 
-## actually modifying file 
+clear
+## actually modifying file use the -i flag
+# sed -i '/[[:digit:]]/d' config.txt   #all lines with numbers deleted
+clear
+
+
+
 
 
