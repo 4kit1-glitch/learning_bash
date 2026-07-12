@@ -18,3 +18,10 @@ clear
 
 # lines with exactly 4 digits
 grep -Eo '[0-9]{2,4}' req.info
+
+clear
+
+# lines with kit , ,fedora or linux
+grep -Ei '(kit|fedora|linux){1}' req.info
+
+exit
