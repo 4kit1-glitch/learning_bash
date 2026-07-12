@@ -27,3 +27,7 @@ sed 's/^/# /' config.txt
 
 # use . for any char , * for all , $ for end 
 clear 
+
+# finding and replacing multiple things with the -e command
+sed -e 's/erors/errors/g' -e 's/ar/are/g' -e 's/dos/those/g' -e 's/^/# /' config.txt ## combining patterns 
+
