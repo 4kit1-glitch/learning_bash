@@ -15,7 +15,7 @@ sed '/erors/p' config.txt
 
 clear
 
-# to ensure on ly the pattern we want matches we use the 
+# to ensure only the pattern we want matches we use the 
 sed -n  '/erors/p' config.txt
 
 clear
@@ -29,9 +29,19 @@ clear
 # list all lines that start with this and end with errors
 sed -n '/^this.*errors$/p' config.txt
 
+clear
 # line that contains any digit
-sed -n ''
+sed -n '/[[:digit:]]/p' config.txt
 
+clear
 
+# range of lines
+## this involves specifying the lines to remove that is form '2,4' -- 2 to 4
+#diff <(sed '2,4d' config.txt) <(cat config.txt)
+
+clear
+
+# rpint the first two lines 
+sed -n '1,2p' config.txt
 
 
