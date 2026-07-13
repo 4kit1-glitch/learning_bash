@@ -1,0 +1,9 @@
+name        size    location    type    message     access
+samsung      000    bamenda     *       yes
+lenovo       803    null        *
+dell        2390    null        *
+crest        930    null        *
+figi        null    init        *
+8920        5670    logs        *
+dev3        1111    data
+kit\        3333    home
