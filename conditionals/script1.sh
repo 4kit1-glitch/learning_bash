@@ -31,6 +31,14 @@ clear
 # check if file is empty
 # from here on i will be using [[ ]]
 
-if [[ -s empty_file.sh ]]; then
+if [[ -s "empty_file.txt" ]]; then
     echo "an empty file"
+fi
+
+clear
+## check if file exist and is readable
+if [[ -r print.c ]]; then
+    echo "file is readable and exist"
+else
+    echo "failure"
 fi
