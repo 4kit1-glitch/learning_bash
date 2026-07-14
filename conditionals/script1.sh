@@ -26,3 +26,11 @@ clear
 if [ -f print.c ]; then
     echo "file is regular";
 fi
+
+clear
+# check if file is empty
+# from here on i will be using [[ ]]
+
+if [[ -s empty_file.sh ]]; then
+    echo "an empty file"
+fi
