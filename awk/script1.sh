@@ -14,4 +14,19 @@ clear
 ## regex in awk
 ## syntax awk '/pattern/ { action }' file
 
-awk '//'
+cd /home/kit/Kitstdios/learning_bash/awk
+awk '/[0-9]+/ {print }' config.txt
+
+clear
+
+## conditionals in awk 
+awk '{
+    if ($2 > 1000 && $2 != "null")
+        print $1 " = "  $2
+    else if ($2 == "null")
+        print $1 " = !!"  $2
+    else
+        print $1 " =.. "  $2
+    }' config.txt
+
+# looping in awk
