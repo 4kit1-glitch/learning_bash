@@ -55,5 +55,5 @@ if [[ -x print.c ]]; then
     echo "file is executable and exist"
 else
     echo "failure"
-fi 
+fi
 clear
