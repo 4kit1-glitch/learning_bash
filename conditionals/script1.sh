@@ -42,3 +42,18 @@ if [[ -r print.c ]]; then
 else
     echo "failure"
 fi
+
+## checks if file writable
+if [[ -w print.c ]]; then
+    echo "file is writable and exist"
+else
+    echo "failure"
+fi
+
+## check if file is executable
+if [[ -x print.c ]]; then
+    echo "file is executable and exist"
+else
+    echo "failure"
+fi 
+clear
