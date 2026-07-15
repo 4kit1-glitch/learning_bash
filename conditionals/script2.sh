@@ -1,5 +1,24 @@
 #!/bin/env bash
 
 # test if the output source is the screen if so then prints either a plain text or a colour
+
+cd /home/kit/Kitstdios/learning_bash/conditionals
+
 if [[ -t 1 ]]; then echo -e "\e[32mGreen text\e[0m"; else echo "plain text"; fi 
+clear
+
+# check if file is changed more recently than another || or also check if one file exist and the other doesn't
+if [[ empty_file.txt -nt print.c ]]; then
+    echo -e "print file is modified recently than the empty file";
+else
+    echo "this is not true";
+fi
+
+clear
+# checking if one file exist and the other doesn't
+if [[ namibia.txt -nt empty_file.txt ]]; then
+    echo -e "print file is modified recently than the empty file";
+else
+    echo "this is not true";
+fi
 
