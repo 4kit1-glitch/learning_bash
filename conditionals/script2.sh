@@ -22,3 +22,14 @@ else
     echo "this is not true";
 fi
 
+clear 
+
+
+# others 
+# check of file 1 is older than file 2 || file 2 exist and file 1 doesn't
+
+if [[ print.c -ot empty_file.txt ]]; then
+    echo -e "file2 exist file 1 not so much";
+else
+    echo "this is not true";
+fi
