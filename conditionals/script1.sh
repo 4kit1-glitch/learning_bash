@@ -57,3 +57,8 @@ else
     echo "failure"
 fi
 clear
+
+# check if file is a socket file
+[[ -S file.sock]] && echo "this is a socket file"
+clear
+
