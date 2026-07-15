@@ -31,7 +31,7 @@ clear
 # check if file is empty
 # from here on i will be using [[ ]]
 
-if [[ -s "empty_file.txt" ]]; then
+if [[ -s "empty_file.txt" ]]; then  # actually checks that file size if 0 
     echo "an empty file"
 fi
 
@@ -61,4 +61,6 @@ clear
 # check if file is a socket file
 [[ -S file.sock]] && echo "this is a socket file"
 clear
+
+# checks if set user id is set SUID
 
