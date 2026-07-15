@@ -66,3 +66,10 @@ clear
 if [[ -u print.c ]]; then
     echo "SUID SET"
 fi
+
+clear
+
+# check if file has been modified 
+if [[ -N print.c ]];  then
+    echo "file modified"
+fi
