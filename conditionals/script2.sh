@@ -4,6 +4,8 @@
 
 cd /home/kit/Kitstdios/learning_bash/conditionals
 
+set -euo pipefail
+
 if [[ -t 1 ]]; then echo -e "\e[32mGreen text\e[0m"; else echo "plain text"; fi 
 clear
 
@@ -32,4 +34,12 @@ if [[ print.c -ot empty_file.txt ]]; then
     echo -e "file2 exist file 1 not so much";
 else
     echo "this is not true";
+fi
+clear
+
+# checks if a shell option is activated
+if [[ -o pipefail ]]; then
+    echo "pipe fail safety on"
+else 
+    echo "pipe fail safety off"
 fi
