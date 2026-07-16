@@ -21,3 +21,26 @@ if [[ $word2 ]]; then
 else
     echo "watashi no namaye"
 fi
+
+# working with intergers 
+
+num1=4
+num2=8
+
+if [[ "$num1" -ne "$num2" ]]; then
+    echo "they are equal"
+else
+    echo "not equal"
+fi
+
+clear
+
+long_txt="hello i am called kit i am a boy"
+
+echo "$long_txt" | grep -o 'k.t'
+# regex in conditionals
+if [[ "$(echo "$long_txt" | sed -E 's/k.t/p')" == $USER ]]; then
+    echo "the text has the current user name";
+else 
+    echo "i am loving bash rn"
+fi
