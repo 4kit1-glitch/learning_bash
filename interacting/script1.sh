@@ -27,5 +27,10 @@ read -e -p "hello : " greet
 echo "$greet"
 
 clear
-#--------------------- time out
+#--------------------- time out---------------------------------------
+read -t 6 -p "hurry:   "
+
+#--------------------- prevent ing backlash interpretation with ------------------------------
+read -r -p "ppp"    # good to use by defualt
+
 
