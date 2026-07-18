@@ -38,9 +38,7 @@ done
 
 echo "count is $count"
 
-
 # handling parameters use the $@ or $* but the first is reccomaeded cause it handles names with spaces well
-
 
 
 
