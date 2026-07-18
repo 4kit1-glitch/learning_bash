@@ -12,3 +12,17 @@
 # if list is not set then by default it will iterate over the positional parameters passed to the script or function. i.e "$@"
 
 # ----------------------------- -------------------------------------------------------------------------------------
+ls /home/kit/Kitstdios/learning_bash/conditionals > repetitions/file.txt
+
+files=$(cat repetitions/file.txt)
+echo $files
+
+# a simple for loop
+# using "$files" prevents globbing and expansion of files with ""
+for file in $files; do 
+    echo $file
+done
+
+
+
+
