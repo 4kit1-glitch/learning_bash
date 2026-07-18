@@ -25,4 +25,4 @@ for i in $(seq $start $stop); do
     echo "hello world"
 done
 
-# or just use (( ))
+# or just use (())
