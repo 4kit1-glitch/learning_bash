@@ -23,6 +23,24 @@ for file in $files; do
     echo $file
 done
 
+clear
+
+# using IFS value to loop through
+IFS=","
+extensions="txt,jpeg,mmpeg"
+
+count=0
+
+for ext in $extensions; do 
+    echo "$ext" 
+    ((count++))
+done 
+
+echo "count is $count"
+
+
+# handling parameters use the $@ or $* but the first is reccomaeded cause it handles names with spaces well
+
 
 
 
