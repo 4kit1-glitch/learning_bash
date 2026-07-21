@@ -22,3 +22,13 @@ var=9.89    # error
 echo $var
 
 clear
+
+## making a variable read only
+declare -r var2="harrry"
+
+var2="mbappe"   # error read only variable
+
+# andother way of creating read-only variables 
+readonly var3="void"
+
+var3=6
