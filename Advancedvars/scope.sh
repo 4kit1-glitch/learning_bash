@@ -8,10 +8,13 @@ count=0
 
 echo out-count =$count
 my_func() {
-    local count
-    echo in - $count    
+    local -r count=10
+    count=90
+    echo in - $count   
 }
 my_func2() {
-    local -I count
-
+    local -I count  # inherits the value of count
+    echo $count
 }
+
+my_func
