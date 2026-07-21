@@ -6,7 +6,7 @@ run_menu()  {
     PS3="please choose and option: "
 
     select option in ${options[@]}; do 
-        case $opt in
+        case $option in
             "Option 1")
                 echo "You selected Option 1"
                 ;;
