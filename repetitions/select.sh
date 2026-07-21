@@ -19,7 +19,7 @@ while true; do
     read -p "Enter your choice [1-4]: " choice
 
     case $choice in
-        1)
+        $(( 2 - 1 )))
             echo "You selected Option 1"
             ;;
         2)
@@ -40,3 +40,32 @@ done
 
 
 ## the above can be written in the select more easily
+clear
+
+
+run_menu()  {
+    options=("option1" "option2" "option3" "Exit")
+
+    PS3="please choose and option"
+
+    select option in ${options[@]}; do 
+        case $opt in
+            "Option 1")
+                echo "You selected Option 1"
+                ;;
+            "Option 2")
+                echo "You selected Option 2"
+                ;;
+            "Option 3")
+                echo "You selected Option 3"
+                ;;
+            "Exit")
+                echo "Exiting..."
+                break
+                ;;
+            *)
+                echo "Invalid choice. Please enter a number between 1 and 4."
+                ;;
+        esac
+    done
+}
