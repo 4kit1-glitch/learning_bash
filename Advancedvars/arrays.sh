@@ -16,3 +16,4 @@ echo "First element of indexed array: ${ARRAY[0]}"
 
 # access all elements with the @ or the *
 echo -e "all elements \n${ARRAY[@]}"
+
